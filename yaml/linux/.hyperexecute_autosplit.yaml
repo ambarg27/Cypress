@@ -17,7 +17,7 @@ pre:
   - npm i lambdatest-cypress-cli
 
 testDiscovery:
-  mode: static
+  mode: dynamic
   type: raw
   command: ls cypress/e2e/2-advanced-examples
 
