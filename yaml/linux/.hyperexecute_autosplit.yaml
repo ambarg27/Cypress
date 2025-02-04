@@ -27,5 +27,4 @@ jobLabel: [cypress-v10, linux, autosplit]
 
 background:
   - npm install node
-  - node helloword/app.js
   - cat /proc/cpuinfo
