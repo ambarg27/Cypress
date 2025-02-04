@@ -24,3 +24,8 @@ testDiscovery:
 testRunnerCommand: npx cypress run --spec ./cypress/e2e/2-advanced-examples/$test --browser=chrome-latest --headed --config video=true
 
 jobLabel: [cypress-v10, linux, autosplit]
+
+background:
+  - npm install node
+  - node helloword/app.js
+  - cat /proc/cpuinfo
