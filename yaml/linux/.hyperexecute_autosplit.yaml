@@ -17,13 +17,13 @@ pre:
   - npm i lambdatest-cypress-cli
 
 testDiscovery:
-  mode: dynamic
+  mode: remote
   type: raw
   command: ls cypress/e2e/2-advanced-examples
 
 testRunnerCommand: npx cypress run --spec ./cypress/e2e/2-advanced-examples/$test --browser=chrome-latest --headed --config video=true
 
-jobLabel: [cypress-v10, linux, autosplit]
+jobLabel: [cypress-v10, linux, autosplit, remote]
 
 background:
   - npm install node
